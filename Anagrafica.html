@@ -1,0 +1,126 @@
+<html>
+
+    <head>
+
+        <title> Anagrafica </title>
+
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+
+    <script>
+
+        function stampa() {
+
+            document.getElementById("risultati").style.display = "block";
+
+            var nome = document.getElementById("nome").value;
+
+            var cognome = document.getElementById("cognome").value;
+
+            var indirizzo = document.getElementById("indirizzo").value;
+
+            var data = document.getElementById("data").value;
+
+            var città = document.getElementById("Città").value;
+
+            var CAP = document.getElementById("CAP").value;
+
+            var outData = "Nome: " + nome + "<br>" +  "Cognome: " + cognome + "<br>" +  "Indirizzo: " + indirizzo + "<br>" +  "Data di nascita: " + data + "<br>" +  "Città: " + città + "<br>" +  "CAP: " + CAP;
+
+            document.getElementById("out").innerHTML = outData;
+        }
+
+    </script>
+
+    <body>
+
+        <h1> Anagrafica </h1>
+
+        <div class="divCasella">
+
+            <label> Nome </label>
+            
+        </div>
+
+        <div class="divTesto">
+
+            <input type="text" id="nome">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> Cognome </label>
+
+        </div>
+
+        <div class="divTesto">
+
+            <input type="text" id="cognome">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> Data nascita </label>
+
+        </div>
+        
+        <div class="divTesto">
+
+            <input type="date" id="data">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> Indirizzo </label>
+
+        </div>
+
+        <div class="divTesto">
+
+            <input type="text" id="indirizzo">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> Città </label>
+
+        </div>
+
+        <div class="divTesto">
+
+            <input type="text" id="Città">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> CAP </label>
+
+        </div>
+
+        <div class="divTesto">
+
+            <input type="number" id="CAP">
+
+        </div>
+
+        <div class="divCasella">
+
+            <input type="button" onclick="stampa()" value="Invio">
+
+        </div>
+
+        <div class="output" id="risultati">
+
+            <p id="out"> </p>
+
+        </div>
+
+    </body>
+    
+</html>
