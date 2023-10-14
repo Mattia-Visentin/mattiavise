@@ -1,0 +1,267 @@
+@font-face {
+
+    font-family: "PrincipaleBold";
+
+    src: url("Comfortaa-Bold.ttf");
+}
+
+@font-face {
+
+    font-family: "PrincipaleLight";
+    
+    src: url("Comfortaa-Light.ttf");
+}
+
+body {
+
+    background-color: black;
+
+    margin-top: 70px;
+
+    margin-left: 70px;
+
+    margin-right: 70px;
+
+    margin-bottom: 70%;
+}
+
+input[type="text"] {
+
+    background-color: black;
+
+    border: 1px solid white;
+    
+    border-radius: 10px;
+
+    color: white;
+
+    font-family: "PrincipaleLight";
+
+    width: 20%;
+
+    height: 20%;
+    
+    min-width: 120px;
+
+    min-height: 25px;
+
+    text-align: center;
+}
+
+input[type="date"] {
+
+    background-color: black;
+
+    border: 1px solid white;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-family: "PrincipaleLight";
+
+    width: 20%;
+
+    height: 20%;
+
+    min-width: 120px;
+
+    min-height: 25px;
+
+    text-align: center;
+}
+
+input[type="checkbox"] {
+
+    background-color: black;
+
+    width: 7%;
+
+    height: 7%;
+
+    min-width: 10px;
+
+    min-height: 10px;
+}
+
+input[type="date"]:hover {
+
+    background-color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    color: black;
+
+    font-family: "PrincipaleLight";
+
+    width: 20%;
+
+    height: 9%;
+
+    min-width: 120px;
+
+    min-height: 25px;
+
+    text-align: center;
+}
+
+input[type="number"] {
+
+    background-color: black;
+
+    border: 1px solid white;
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-family: "PrincipaleLight";
+
+    width: 20%;
+
+    height: 20%;
+
+    min-width: 120px;
+
+    min-height: 25px;
+
+    text-align: center;
+}
+
+input[type="number"]:hover {
+
+    background-color: white;
+
+    border: none;
+
+    border-radius: 10px;
+
+    color: black;
+
+    font-family: "PrincipaleLight";
+
+    width: 20%;
+
+    height: 9%;
+
+    min-width: 120px;
+
+    min-height: 25px;
+
+    text-align: center;
+}
+
+input[type="button"] {
+
+    background-color: black;
+
+    border: 1px solid white;
+
+    color: white;
+
+    border-radius: 15px;
+
+    font-family: "PrincipaleLight";
+
+    width: 10%;
+
+    height: 5%;
+    
+    min-width: 90px;
+
+    min-height: 40px;
+
+    font-size: medium;
+}
+
+input[type="button"]:hover {
+
+    background-color: white;
+
+    border: none;
+
+    color: black;
+
+    border-radius: 15px;
+
+    font-family: "PrincipaleLight";
+
+    font-size: medium;
+
+    width: 10%;
+
+    height: 5%;
+    
+    min-width: 90px;
+
+    min-height: 40px;
+}
+
+p {
+
+    color: white;
+
+    font-size: large;
+
+    line-height: 300%;
+
+    font-family: "PrincipaleLight";
+
+    font-weight: lighter;
+
+    padding-left: 10px;
+}
+
+.divCasella {
+
+    padding-top: 5%;
+}
+
+.divTesto {
+
+    padding-top: 2%;
+}
+
+label {
+
+    color: white;
+
+    font-family: "PrincipaleLight";
+
+    padding-right: 3%;
+}
+
+h1 {
+
+    color: white;
+    
+    font-family: "PrincipaleBold";
+
+    text-align: center;
+    
+    font-stretch: extra-expanded;
+
+    font-size: 500%;
+}
+
+.output {
+
+    margin-top: 7%;
+
+    border: 1px solid white;
+
+    border-radius: 10px;
+
+    width: 50%;
+
+    display: none;
+}
+
+h2 {
+
+    color: white;
+
+    font-family: "PrincipaleBold";
+}
