@@ -1,16 +1,17 @@
 @font-face {
 
-    font-family: 'Principale';
+    font-family: "PrincipaleBold";
 
-    src: url("Fonts/Comfortaa-Light.ttf");
+    src: url("Comfortaa-Bold.ttf");
 }
 
 @font-face {
-    
-    font-family: "PrincipaleBold";
 
-    src: url("Fonts/Comfortaa-Bold.ttf");
+    font-family: "PrincipaleLight";
+    
+    src: url("Comfortaa-Light.ttf");
 }
+
 body {
 
     background-color: black;
@@ -34,7 +35,7 @@ input[type="text"] {
 
     color: white;
 
-    font-family: "Principale";
+    font-family: "PrincipaleLight";
 
     width: 20%;
 
@@ -57,7 +58,7 @@ input[type="date"] {
 
     color: white;
 
-    font-family: "Principale";
+    font-family: "PrincipaleLight";
 
     width: 20%;
 
@@ -70,6 +71,19 @@ input[type="date"] {
     text-align: center;
 }
 
+input[type="checkbox"] {
+
+    background-color: black;
+
+    width: 7%;
+
+    height: 7%;
+
+    min-width: 10px;
+
+    min-height: 10px;
+}
+
 input[type="date"]:hover {
 
     background-color: white;
@@ -80,7 +94,7 @@ input[type="date"]:hover {
 
     color: black;
 
-    font-family: "Principale";
+    font-family: "PrincipaleLight";
 
     width: 20%;
 
@@ -103,7 +117,7 @@ input[type="number"] {
 
     color: white;
 
-    font-family: "Principale";
+    font-family: "PrincipaleLight";
 
     width: 20%;
 
@@ -126,7 +140,7 @@ input[type="number"]:hover {
 
     color: black;
 
-    font-family: "Principale";
+    font-family: "PrincipaleLight";
 
     width: 20%;
 
@@ -149,7 +163,7 @@ input[type="button"] {
 
     border-radius: 15px;
 
-    font-family: "Principale";
+    font-family: "PrincipaleLight";
 
     width: 10%;
 
@@ -172,7 +186,7 @@ input[type="button"]:hover {
 
     border-radius: 15px;
 
-    font-family: "Principale";
+    font-family: "PrincipaleLight";
 
     font-size: medium;
 
@@ -193,7 +207,7 @@ p {
 
     line-height: 300%;
 
-    font-family: "Principale";
+    font-family: "PrincipaleLight";
 
     font-weight: lighter;
 
@@ -214,7 +228,7 @@ label {
 
     color: white;
 
-    font-family: "Principale";
+    font-family: "PrincipaleLight";
 
     padding-right: 3%;
 }
@@ -243,4 +257,11 @@ h1 {
     width: 50%;
 
     display: none;
+}
+
+h2 {
+
+    color: white;
+
+    font-family: "PrincipaleBold";
 }
