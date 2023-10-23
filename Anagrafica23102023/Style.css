@@ -82,14 +82,6 @@ input[type="date"] {
 input[type="checkbox"] {
 
     background-color: black;
-
-    width: 7%;
-
-    height: 7%;
-
-    min-width: 10px;
-
-    min-height: 10px;
 }
 
 input[type="date"]:hover {
@@ -256,6 +248,13 @@ p {
 .divTesto {
 
     padding-top: 2%;
+}
+
+.divMateria {
+
+    padding-top: 5%;
+
+    padding-bottom: 2%
 }
 
 label {
