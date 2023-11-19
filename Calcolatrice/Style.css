@@ -1,0 +1,170 @@
+@font-face {
+    
+    font-family: "PricipaleLight";
+
+    src: url("Comfortaa-Light.ttf");
+}
+
+@font-face {
+
+    font-family: "PrincipaleBold";
+
+    src: url("Comfortaa-Bold.ttf");
+}
+
+body {
+
+    background-color: black;
+}
+
+.calcolatrice {
+
+    text-align: center;
+
+    width: 360px;
+
+    margin-left: calc((100% - 360px) / 2);
+}
+
+.ACButton {
+
+    background-color: rgb(165, 165, 165);
+
+    width: 75px;
+
+    height: 75px;
+
+    border: none;
+
+    border-radius: 37.5px;
+
+    font-size: x-large;
+
+    font-family: "PrincipaleBold";
+}
+
+.risultati {
+
+    text-align: right;
+
+    font-size: 77px;
+
+    color:white;
+
+    font-family: "PrincipaleBold";
+
+    overflow-x: hidden;
+
+    margin-top: 30px;
+
+    margin-bottom: 30px;
+}
+
+.linea {
+    
+    float: left;
+
+    margin-left: 15px;
+}
+
+.fineLinea {
+
+    margin: 15px;
+
+    margin-left: 15px;
+
+    width: 350px;
+}
+
+.bottone1 {
+
+    background-color: rgb(165, 165, 165);
+
+    width: 75px;
+
+    height: 75px;
+
+    border: none;
+
+    border-radius: 37.5px;
+
+    font-size: x-large;
+
+    font-family: "PricipaleLight";
+}
+
+.bottone2 {
+
+    background-color: rgb(255, 159, 10);
+
+    width: 75px;
+
+    height: 75px;
+
+    border: none;
+
+    border-radius: 37.5px;
+
+    font-size: x-large;
+
+    color: white;
+
+    margin-left: 15px;
+
+    font-family: "PricipaleLight";
+}
+
+.bottone3 {
+
+    background-color: rgb(51, 51, 51);
+
+    width: 75px;
+
+    height: 75px;
+
+    border: none;
+
+    border-radius: 37.5px;
+
+    font-size: x-large;
+
+    color: white;
+
+    font-family: "PricipaleLight";
+}
+
+.bottone0 {
+
+    background-color: rgb(51, 51, 51);
+
+    width: 165px;
+
+    height: 75px;
+
+    border: none;
+
+    border-radius: 37.5px;
+
+    font-family: "PricipaleLight";
+
+    font-size: x-large;
+
+    color: white;
+}
+
+.bottoniFunzione {
+
+    width: 75px;
+
+    height: 55px;
+
+    background-color: rgb(165, 165, 165);
+
+    border: none;
+
+    border-radius: 27.5px;
+
+    font-size: x-large;
+
+    font-family: "PricipaleLight";
+}

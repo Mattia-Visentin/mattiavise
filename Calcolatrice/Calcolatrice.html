@@ -1,0 +1,98 @@
+<html>
+    <head> 
+
+        <title> Calcolatrice </title>
+
+        <link rel="stylesheet" href="Style.css">
+    </head>
+
+    <body>
+
+        <div class="calcolatrice">
+
+            <div style="width: 360;">
+
+                <p class="risultati" id="risultato"> 0 </p>
+
+            </div>
+
+            <div class="linea">
+                <button name="AC" value="AC" id="radice" class="bottoniFunzione" onclick="radice()"> √ </button>
+            </div>
+            <div class="linea" >
+                <button class="bottoniFunzione" name="radiceCubica" value="radiceCubica" id="radiceCubica" onclick="radiceCubica()"> ᶟ√ </button>
+            </div>
+            <div class="linea">
+                <button class="bottoniFunzione" name="quadrato" value="quadrato" id="quadrato" onclick="quadrato()"> x² </button>
+            </div>
+            <div class="fineLinea">
+                <button style="margin-left: 15px;" class="bottoniFunzione" name="cubo" value="cubo" id="cubo" onclick="cubo()"> x³ </button>
+            </div>
+
+            <div class="linea">
+                <button name="AC" value="AC" id="Cancella" class="ACButton" onclick="AC()"> AC </button>
+            </div>
+            <div class="linea" >
+                <button class="bottone1" name="cambiaS" value="cambiaS" id="cambiaS" onclick="segno()"> ± </button>
+            </div>
+            <div class="linea">
+                <button class="bottone1" name="percent" value="percent" id="percent" onclick="perCento()"> % </button>
+            </div>
+            <div class="fineLinea">
+                <button class="bottone2" name="divisione" value="divisione" id="divisione" onclick="operaz('divisione')"> ÷ </button>
+            </div>
+
+            <div class="linea">
+                <button class="bottone3" name="7" value="7" id="7" onclick="aggiungi('7')"> 7 </button>
+            </div>
+            <div class="linea">
+                <button class="bottone3" name="8" value="8" id="8" onclick="aggiungi('8')"> 8 </button>
+            </div>
+            <div class="linea">
+                <button class="bottone3" name="9" value="9" id="9" onclick="aggiungi('9')"> 9 </button>
+            </div>
+            <div class="fineLinea">
+                <button class="bottone2" name="per" value="per" id="per" onclick="operaz('moltiplicazione')"> X </button>
+            </div>
+
+            <div class="linea">
+                <button class="bottone3" name="4" value="4" id="4" onclick="aggiungi('4')"> 4 </button>
+            </div>
+            <div class="linea">
+                <button class="bottone3" name="5" value="5" id="5" onclick="aggiungi('5')"> 5 </button>
+            </div>
+            <div class="linea">
+                <button class="bottone3" name="6" value="6" id="6" onclick="aggiungi('6')"> 6 </button>
+            </div>
+            <div class="fineLinea">
+                <button class="bottone2" name="differenza" value="differenza" id="differenza" onclick="operaz('differenza')"> - </button>
+            </div>
+
+            <div class="linea">
+                <button class="bottone3" name="1" value="1" id="1" onclick="aggiungi('1')"> 1 </button>
+            </div>
+            <div class="linea">
+                <button class="bottone3" name="2" value="2" id="2" onclick="aggiungi('2')"> 2 </button>
+            </div>
+            <div class="linea">
+                <button class="bottone3" name="3" value="3" id="3" onclick="aggiungi('3')"> 3 </button>
+            </div>
+            <div class="fineLinea">
+                <button class="bottone2" name="piu" value="piu" id="piu" onclick="operaz('addizione')"> + </button>
+            </div>
+
+            <div class="linea">
+                <button class="bottone0" name="0" value="0" id="0" onclick="aggiungi('0')"> 0 </button>
+            </div>
+            <div class="linea">
+                <button class="bottone3" name="virgola" value="virgola" id="virgola" onclick="virgola()"> , </button>
+            </div>
+            <div class="fineLinea">
+                <button class="bottone2" name="uguale" value="uguale" id="uguale" onclick="uguale()"> = </button>
+            </div>
+        </div>
+        
+    </body>
+
+    <script src="CalcolatriceCodice.js"></script>
+</html>
