@@ -13,184 +13,190 @@
 
         <h1> Valutazioni </h1>
 
-        <div class="divCasella">
+        <div class="divForm">
 
-            <label> Nome </label>
+            <div class="divCasella">
+
+                <label> Nome </label>
+                
+            </div>
+
+            <div class="divTesto">
+
+                <input type="text" id="nome">
+
+            </div>
+
+            <div class="divCasella">
+
+                <label> Cognome </label>
+
+            </div>
+
+            <div class="divTesto">
+
+                <input type="text" id="cognome">
+
+            </div>
+
+            <div class="divCasella">
+
+                <label> Data nascita </label>
+
+            </div>
             
-        </div>
+            <div class="divTesto">
 
-        <div class="divTesto">
+                <input type="date" id="data">
 
-            <input type="text" id="nome">
+            </div>
 
-        </div>
+            <div class="divCasella">
 
-        <div class="divCasella">
+                <label> Indirizzo </label>
 
-            <label> Cognome </label>
+            </div>
 
-        </div>
+            <div class="divTesto">
 
-        <div class="divTesto">
+                <input type="text" id="indirizzo">
 
-            <input type="text" id="cognome">
+            </div>
 
-        </div>
+            <div class="titleDownDrop">
 
-        <div class="divCasella">
+                <label> Provincia </label>
 
-            <label> Data nascita </label>
+            </div>
 
-        </div>
+            <select name="Province" id="Province">
+
+            </select>
+
+            <div class="divCasella">
+
+                <label> Città </label>
+
+            </div>
+
+            <div class="divTesto">
+
+                <input type="text" id="Città">
+
+            </div>
+
+            <div class="divCasella">
+
+                <label> CAP </label>
+
+            </div>
+
+            <div class="divTesto">
+
+                <input type="number" id="CAP">
+
+            </div>
+
+            <div class="divCasella">
+
+                <label> Sesso </label>
+
+            </div>
+
+            <div class="divTesto">
+                
+                <input type="radio" value="Femmina" name="sesso" id="fem"> 
+
+                <label> Femmina </label>
+
+                <input type="radio" value="Maschio" name="sesso" id="masch">
+
+                <label> Maschio </label>
+
+            </div>
+
+            <div class="divMateria"> 
+
+                <h2> Materie: </h2>
+            </div>
         
-        <div class="divTesto">
 
-            <input type="date" id="data">
+            <div>
 
+                <input type="checkbox" id="italiano">
+
+                <label> Italiano </label> 
+
+            </div>
+
+            <div class="divCasella">
+
+
+                <input type="checkbox" id="storia">
+
+                <label> Storia </label> 
+
+            </div>
+
+            <div class="divCasella">
+
+
+                <input type="checkbox" id="matematica">
+
+                <label> Matematica </label> 
+
+            </div>
+
+            <div class="divCasella">
+
+
+                <input type="checkbox" id="sistemi">
+
+                <label> Sistemi </label> 
+
+            </div>
+
+            <div class="divCasella">
+
+
+                <input type="checkbox" id="TPS">
+
+                <label> TPS </label> 
+
+            </div>
+
+            <div class="divCasella">
+
+
+                <input type="checkbox" id="informatica">
+
+                <label> Informatica </label> 
+
+            </div>
+
+            <div class="divCasella">
+
+
+                <input type="checkbox" id="telecomunicazioni">
+
+                <label> Telecomunicazioni </label> 
+
+            </div>
+
+            <div class="divCasella">
+
+                <input type="button" onclick="stampa()" value="Invio">
+
+            </div>
         </div>
 
-        <div class="divCasella">
-
-            <label> Indirizzo </label>
-
-        </div>
-
-        <div class="divTesto">
-
-            <input type="text" id="indirizzo">
-
-        </div>
-
-        <div class="titleDownDrop">
-
-            <label> Provincia </label>
-
-        </div>
-
-        <select name="Province" id="Province">
-
-        </select>
-
-        <div class="divCasella">
-
-            <label> Città </label>
-
-        </div>
-
-        <div class="divTesto">
-
-            <input type="text" id="Città">
-
-        </div>
-
-        <div class="divCasella">
-
-            <label> CAP </label>
-
-        </div>
-
-        <div class="divTesto">
-
-            <input type="number" id="CAP">
-
-        </div>
-
-        <div class="divCasella">
-
-            <label> Sesso </label>
-
-        </div>
-
-        <div class="divTesto">
+        <div class="divForm">
             
-            <input type="radio" value="Femmina" name="sesso" id="fem"> 
+            <div class="output" id="risultati">
 
-            <label> Femmina </label>
-
-            <input type="radio" value="Maschio" name="sesso" id="masch">
-
-            <label> Maschio </label>
-
-        </div>
-
-        <div class="divMateria"> 
-
-            <h2> Materie: </h2>
-        </div>
-       
-
-        <div>
-
-            <input type="checkbox" id="italiano">
-
-            <label> Italiano </label> 
-
-        </div>
-
-        <div class="divCasella">
-
-
-            <input type="checkbox" id="storia">
-
-            <label> Storia </label> 
-
-        </div>
-
-        <div class="divCasella">
-
-
-            <input type="checkbox" id="matematica">
-
-            <label> Matematica </label> 
-
-        </div>
-
-        <div class="divCasella">
-
-
-            <input type="checkbox" id="sistemi">
-
-            <label> Sistemi </label> 
-
-        </div>
-
-        <div class="divCasella">
-
-
-            <input type="checkbox" id="TPS">
-
-            <label> TPS </label> 
-
-        </div>
-
-        <div class="divCasella">
-
-
-            <input type="checkbox" id="informatica">
-
-            <label> Informatica </label> 
-
-        </div>
-
-        <div class="divCasella">
-
-
-            <input type="checkbox" id="telecomunicazioni">
-
-            <label> Telecomunicazioni </label> 
-
-        </div>
-
-        <div class="divCasella">
-
-            <input type="button" onclick="stampa()" value="Invio">
-
-        </div>
-
-        <div class="output" id="risultati">
-
-            <p id="out"> </p>
-
+                <p id="out"> </p>
+    
+            </div>
         </div>
 
     </body>
