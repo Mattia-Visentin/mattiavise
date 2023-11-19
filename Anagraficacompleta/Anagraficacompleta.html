@@ -72,9 +72,11 @@
 
     </script>
 
-    <body>
+<body>
 
-        <h1> Valutazioni </h1>
+    <h1> Valutazioni </h1>
+
+    <div class="divForm">
 
         <div class="divCasella">
 
@@ -157,17 +159,20 @@
         <div class="divTesto">
             
             <input type="radio" value="Femmina" name="sesso" id="fem"> 
-            <label> Femmina: </label>
+
+            <label> Femmina </label>
+
             <input type="radio" value="Maschio" name="sesso" id="masch">
-            <label> Maschio: </label>
+
+            <label> Maschio </label>
 
         </div>
 
-        <div class="divCasella"> 
+        <div class="divMateria"> 
 
             <h2> Materie: </h2>
         </div>
-       
+    
 
         <div>
 
@@ -236,13 +241,17 @@
             <input type="button" onclick="stampa()" value="Invio">
 
         </div>
+    </div>
 
+    <div class="divForm">
+        
         <div class="output" id="risultati">
 
             <p id="out"> </p>
 
         </div>
+    </div>
 
-    </body>
+</body>
     
 </html>
