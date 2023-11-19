@@ -1,0 +1,163 @@
+@font-face {
+
+    font-family: "PrincipaleBold";
+
+    src: url("Fonts/Comfortaa-Bold.ttf");
+}
+
+@font-face {
+
+    font-family: "PrincipaleLight";
+    
+    src: url("Fonts/Comfortaa-Light.ttf");
+}
+body {
+
+    background-color: black;
+
+    margin-top: 70px;
+
+    margin-left: 70px;
+
+    margin-right: 70px;
+}
+
+h1 {
+
+    color: white;
+
+    font-family: "PrincipaleBold";
+
+    font-size: 300%;
+
+    text-align: center;
+}
+
+.calcolatrice {
+
+    width: 500px;
+
+    margin-left: calc((100% - 500px - 70px) / 2);
+}
+
+input[type = "number"] {
+
+    border: 1px solid white;
+
+    background-color: black;
+
+    border-radius: 15px;
+
+    color: white;
+
+    font-family: "PrincipaleLight";
+
+    text-align: center;
+
+    width: 10%;
+
+    height: 5%;
+    
+    min-width: 90px;
+
+    min-height: 40px;
+
+    margin-top: 15px;
+}
+
+select {
+
+    border: 1px solid white;
+
+    border-radius: 15px;
+
+    font-family: "PrincipaleLight";
+
+    text-align: center;
+
+    color: black;
+
+    width: 10%;
+
+    height: 5%;
+    
+    min-width: 90px;
+
+    min-height: 40px;
+
+    margin-top: 15px;
+
+    margin-left: 3%;
+
+    margin-right: 3%;
+}
+
+.risulato {
+
+    color: white;
+
+    font-family: "PrincipaleLight";
+
+    text-align: center;
+
+    margin-top: 5%;
+
+    font-size: xx-large;
+}
+
+.inDati {
+
+    margin-left: 7%;
+}
+
+input[type="button"] {
+
+    background-color: black;
+
+    border: 1px solid white;
+
+    color: white;
+
+    border-radius: 15px;
+
+    font-family: "PrincipaleLight";
+
+    width: 10%;
+
+    height: 5%;
+    
+    min-width: 90px;
+
+    min-height: 40px;
+
+    margin-left: 3%;
+
+    margin-top: 15px;
+
+    font-size: medium;
+}
+
+input[type="button"]:hover {
+
+    background-color: white;
+
+    margin-left: 3%;
+
+    border: none;
+
+    color: black;
+
+    border-radius: 15px;
+
+    font-family: "PrincipaleLight";
+
+    font-size: medium;
+
+    width: 10%;
+
+    height: 5%;
+    
+    min-width: 90px;
+
+    min-height: 40px;
+}
