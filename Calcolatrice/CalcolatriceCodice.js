@@ -4,10 +4,6 @@ let operazione = Array();
 
 function aggiungi(tasto) {
 
-    console.log(numero);
-
-    console.log(operazione);
-
     let schermo = document.getElementById("risultato");
 
     numero[operazione.length != 0 ? (operazione.length) : 0] += tasto;
