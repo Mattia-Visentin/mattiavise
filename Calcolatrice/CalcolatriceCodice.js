@@ -34,7 +34,7 @@ function segno() {
 
     let schermo = document.getElementById("risultato");
 
-    numero[operazione.length != 0 ? (operazione.length) : 0] = parseFloat(numero[operazione.length != 0 ? (operazione.length) : 0] * -1);
+    numero[operazione.length] = parseFloat(numero[operazione.length] * -1);
 
     schermo.innerHTML = numero[operazione.length != 0 ? (operazione.length) : 0];
 
@@ -44,11 +44,11 @@ function virgola() {
 
     let schermo = document.getElementById("risultato");
 
-    if(!String(numero[operazione.length != 0 ? (operazione.length) : 0]).includes(".")) {
+    if(!String(numero[operazione.length]).includes(".")) {
 
-        numero[operazione.length != 0 ? (operazione.length) : 0] += ".";
+        numero[operazione.length] += ".";
 
-        schermo.innerHTML = numero[operazione.length != 0 ? (operazione.length) : 0];
+        schermo.innerHTML = numero[operazione.length];
     }
 }
 
@@ -80,18 +80,18 @@ function quadrato() {
 
     let schermo = document.getElementById("risultato");
 
-    numero[operazione.length != 0 ? (operazione.length) : 0] = Math.pow(parseFloat(numero[operazione.length != 0 ? (operazione.length) : 0]), 2);
+    numero[operazione.length] = Math.pow(parseFloat(numero[operazione.length]), 2);
 
-    visualizzaRisultato(numero[operazione.length != 0 ? (operazione.length) : 0]);
+    visualizzaRisultato(numero[operazione.length]);
 }
 
 function cubo() {
 
     let schermo = document.getElementById("risultato");
 
-    numero[operazione.length != 0 ? (operazione.length) : 0] = Math.pow(parseFloat(numero[operazione.length != 0 ? (operazione.length) : 0]), 3);
+    numero[operazione.length] = Math.pow(parseFloat(numero[operazione.length]), 3);
 
-    visualizzaRisultato(numero[operazione.length != 0 ? (operazione.length) : 0]);
+    visualizzaRisultato(numero[operazione.length]);
 }
 
 function radice() {
@@ -191,7 +191,7 @@ function rimuovi(indice) {
 function rimuoviOper(indice) {
 
     if (indice >= 0 && indice < operazione.length) {
+
         operazione.splice(indice, 1);
-        
     }
 }
