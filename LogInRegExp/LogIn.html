@@ -1,0 +1,49 @@
+<html>
+    <head> <title> LogIn </title> 
+
+    <link rel="stylesheet" href="Style.css">
+
+    </head>
+
+    <body>
+
+        <div class="generale">
+
+            <div class="result" id="esito">
+           
+                <p id="testoEsito"> </p>
+            </div>
+            <div class="form">
+                <div class="titolo"> 
+                    <h1> Login </h1>
+                </div>
+        
+                <div class="username">
+                    <label> Mail: </label>
+        
+                    <div>
+                        <input type="text" id="user" required placeholder="example@mail.com">
+                    </div>
+                    
+                </div>
+        
+                <div class="passrd">
+        
+                    <label> Password: </label>
+        
+                    <div>
+                        <input type="password" id="password" required onsubmit="controllo()">
+                    </div>
+                </div>
+    
+                <div>
+                    <div>
+                        <input type="button" value="Invio" id="bottone" onclick="controllo()" onsubmit="controllo()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="LogInCodice.js"></script>
+</html>
