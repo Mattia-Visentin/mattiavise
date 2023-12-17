@@ -1,0 +1,55 @@
+<html>
+
+    <head>
+
+        <title> Anagrafica </title>
+
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+
+
+    <body>
+
+        <div> <h3> Anagrafica </h3> </div>
+
+        <div class="output" id="risultati">
+
+            <p id="out"> </p>
+
+        </div>
+
+    </body>
+
+    <script>
+
+        let nome = localStorage.getItem("nome");
+
+        let cognome = localStorage.getItem("cognome");
+
+        let indirizzo = localStorage.getItem("indirizzo");
+
+        let città = localStorage.getItem("città");
+
+        let data = localStorage.getItem("data");
+
+        let CAP = localStorage.getItem("CAP");
+
+        let fem = localStorage.getItem("fem");
+
+        let mash = localStorage.getItem("masch");
+
+        let materie = localStorage.getItem("materie"); 
+        
+        let provincia = localStorage.getItem("provincia"); 
+        
+        localStorage.clear();
+
+        var outData = "Nome: " + nome + "<br>" +  "Cognome: " + cognome + "<br>" +  "Indirizzo: " + indirizzo + "<br>" +  " Provincia: " + provincia + "<br>" +  "Data di nascita: " + data + "<br>" +  "Città: " + città + "<br>" +  "CAP: " + CAP + "<br>"  +  "Sesso: "+ ((fem.checked) ? "Femmina" : "Maschio") 
+        + "<br>" + "Materie: " + "<br>" + materie;
+                            
+        document.getElementById("out").innerHTML = outData;
+
+    </script>
+    
+</html>
