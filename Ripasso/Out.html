@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Lista Cognomi</title>
+
+        <link rel="stylesheet" href="Style.css">
+
+    </head>
+
+    <body class="body2">
+
+        <div style="vertical-align: top;">
+
+            <div>
+
+                <h2>Lista dei Cognomi</h2>
+
+            </div>
+
+            <div>
+                <table>
+                    
+                    <thead>
+
+                        <tr>
+
+                            <th>Cognome</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody id="tabellaCognomi"></tbody>
+                
+                </table>
+            
+            </div>
+        
+        </div>
+
+        <script>
+            
+                var cognomiString = localStorage.getItem('cognomi');
+                
+                var cognomiArray = cognomiString.split(',');
+
+                var tabellaBody = document.getElementById('tabellaCognomi');
+                
+                cognomiArray.forEach(function(cognome) {
+                    
+                    var row = tabellaBody.insertRow(-1);
+                    
+                    var cell = row.insertCell(0);
+
+                    cell.textContent = cognome;
+                });
+
+        </script>
+
+    </body>
+
+</html>

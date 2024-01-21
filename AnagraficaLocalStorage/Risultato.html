@@ -1,0 +1,39 @@
+<html>
+
+    <head>
+
+        <title> Anagrafica </title>
+
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+
+
+    <body>
+
+        <div class="output" id="risultati">
+
+            <p id="out"> </p>
+
+        </div>
+
+    </body>
+
+    <script>
+        
+        let datiString = localStorage.getItem("dati");
+
+        var dati = datiString.split(',');
+
+        console.log(dati);
+
+        localStorage.clear();     
+
+        var outData = "Nome: u" + dati[0] + "<br>" +  "Cognome: " + dati[1] + "<br>" +  "Indirizzo: " + dati[2] + "<br>" +  " Provincia: " + dati[7] + "<br>" +  "Data di nascita: " + dati[3] + "<br>" +  "Città: " + dati[8] + "<br>" +  "CAP: " + dati[4] + "<br>"  +  "Sesso: "+ dati[5]
+        + "<br>" + "Materie: " + "<br>" + dati[6];
+                            
+        document.getElementById("out").innerHTML = outData;
+
+    </script>
+    
+</html>

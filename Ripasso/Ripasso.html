@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title> Tabella cognomi</title>
+
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body class="body">
+
+        <div class="generale">
+
+            <div class="form">
+
+                <div class="interno">
+                    <label>Inserisci cognomi:</label>
+                </div>
+
+                <div>
+                    <input type="text" id="cognomiInput" placeholder="Rossi, Verdi, Bianchi">
+                
+                    <input type="button" onclick="salvaCognomi()" value="Salva"></input>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <script>
+
+            function salvaCognomi() {
+                
+                var cognomi = document.getElementById('cognomiInput');
+                
+                var cognomiString = cognomi.value.trim();
+
+                if (cognomiString !== "") {
+                   
+                    var cognomiArray = cognomiString.split(',');
+                    
+                    localStorage.setItem('cognomi', cognomiArray);
+                   
+                    window.location.href = 'Out.html';
+               
+                } else {
+                    
+                    alert('Inserire il cognome/cognomi da salvare');
+                }
+            }
+        </script>
+    </body>
+</html>
