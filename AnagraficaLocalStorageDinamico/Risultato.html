@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+
+        <title> Anagrafica </title>
+
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+
+
+    <body>
+
+        <h2> Anagrafica</h2>
+
+        <div class="output" id="risultati">
+
+        </div>
+
+    </body>
+
+    <script>
+
+        var out = document.createElement("div");
+        
+        let datiString = localStorage.getItem("dati");
+
+        var dati = datiString.split(',');
+
+        let campi = ["Nome: ", "Cognome: ", "Indirizzo: ", "Provincia: ", "Data di nascita: ", "Città: ", "CAP: ", "Sesso: ", "Materie: "];
+
+        console.log(dati);
+
+        localStorage.clear();     
+
+        for(let i = 0; i < dati.length; i++) {
+
+            out.appendChild(document.createTextNode(campi[i]));
+
+            out.appendChild(document.createTextNode(dati[i]));
+
+            out.appendChild(document.createElement("br"));
+        }
+
+        document.getElementById("risultati").appendChild(out);
+
+        //document.getElementById("risultati").value = "Ciao";
+
+        //var outData = "Nome: u" + dati[0] + "<br>" +  "Cognome: " + dati[1] + "<br>" +  "Indirizzo: " + dati[2] + "<br>" +  " Provincia: " + dati[7] + "<br>" +  "Data di nascita: " + dati[3] + "<br>" +  "Città: " + dati[8] + "<br>" +  "CAP: " + dati[4] + "<br>"  +  "Sesso: "+ dati[5]
+        //+ "<br>" + "Materie: " + "<br>" + dati[6];
+                            
+        //document.getElementById("out").innerHTML = outData;
+
+    </script>
+    
+</html>
