@@ -1,0 +1,46 @@
+<html>
+
+    <head>
+
+        <title> Anagrafica </title>
+
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+
+
+    <body>
+
+        <div class="output" id="risultati">
+
+
+        </div>
+
+    </body>
+
+    <script>
+
+        var out = document.createElement("div");
+        
+        let datiString = localStorage.getItem("dati");
+
+        var dati = datiString.split(',');
+
+        let campi = ["Nome: ", "Cognome: ", "Indirizzo: ", "Provincia: ", "Data di nascita: ", "Città: ", "CAP: ", "Sesso: ", "Materie: "];
+
+        localStorage.clear();     
+
+        for(let i = 0; i < dati.length; i++) {
+
+            out.appendChild(document.createTextNode(campi[i]));
+
+            out.appendChild(document.createElement("br"));
+
+            out.appendChild(document.createTextNode(dati[i]));
+        }
+
+        document.getElementById("risultati").appendChild(out);
+        
+    </script>
+    
+</html>

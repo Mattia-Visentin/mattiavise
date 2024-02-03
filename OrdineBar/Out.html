@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+
+        <title> Anagrafica </title>
+
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+
+
+    <body>
+
+        <div class="output" id="risultati">
+
+            <h2> Ordini bar</h2>
+
+            <p id="out"> </p>
+
+        </div>
+
+    </body>
+
+    <script>
+        
+
+        let dati = localStorage.getItem("mat");
+
+        let nomi = localStorage.getItem("nomi");
+
+        nomi = nomi.split(",");
+
+        let ordini = dati.split(";");
+
+        var ordiniSingoli = ordini.map(function (parte) {
+
+            return parte.replace(/^,\s*/, ' ');
+
+        });
+
+        localStorage.clear();
+
+        for(let i = 0; i < nomi.length; i++) {
+
+            out.appendChild(document.createTextNode(nomi[i]));
+
+            out.appendChild(document.createTextNode(ordiniSingoli[i]));
+
+            out.appendChild(document.createElement("br"));
+        }
+
+        document.getElementById("risultati").appendChild(out);
+
+    </script>
+    
+</html>

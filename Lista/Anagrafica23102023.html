@@ -1,0 +1,268 @@
+<html>
+
+    <head>
+
+        <title> Anagrafica </title>
+
+        <link rel="stylesheet" href="Style.css">
+        
+    </head>
+
+    <body>
+
+        <h1> Valutazioni </h1>
+
+        <div class="divCasella">
+
+            <label> Nome </label>
+            
+        </div>
+
+        <div class="divTesto">
+
+            <input type="text" id="nome">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> Cognome </label>
+
+        </div>
+
+        <div class="divTesto">
+
+            <input type="text" id="cognome">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> Data nascita </label>
+
+        </div>
+        
+        <div class="divTesto">
+
+            <input type="date" id="data">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> Indirizzo </label>
+
+        </div>
+
+        <div class="divTesto">
+
+            <input type="text" id="indirizzo">
+
+        </div>
+
+        <div class="titleDownDrop">
+
+            <label> Provincia </label>
+
+        </div>
+
+        <select name="Province" id="Province">
+
+        </select>
+
+        <div class="divCasella">
+
+            <label> Città </label>
+
+        </div>
+
+        <div class="divTesto">
+
+            <input type="text" id="Città">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> CAP </label>
+
+        </div>
+
+        <div class="divTesto">
+
+            <input type="number" id="CAP">
+
+        </div>
+
+        <div class="divCasella">
+
+            <label> Sesso </label>
+
+        </div>
+
+        <div class="divTesto">
+            
+            <input type="radio" value="Femmina" name="sesso" id="fem"> 
+
+            <label> Femmina </label>
+
+            <input type="radio" value="Maschio" name="sesso" id="masch">
+
+            <label> Maschio </label>
+
+        </div>
+
+        <div class="divMateria"> 
+
+            <h2> Materie: </h2>
+        </div>
+       
+
+        <div>
+
+            <input type="checkbox" id="italiano">
+
+            <label> Italiano </label> 
+
+        </div>
+
+        <div class="divCasella">
+
+
+            <input type="checkbox" id="storia">
+
+            <label> Storia </label> 
+
+        </div>
+
+        <div class="divCasella">
+
+
+            <input type="checkbox" id="matematica">
+
+            <label> Matematica </label> 
+
+        </div>
+
+        <div class="divCasella">
+
+
+            <input type="checkbox" id="sistemi">
+
+            <label> Sistemi </label> 
+
+        </div>
+
+        <div class="divCasella">
+
+
+            <input type="checkbox" id="TPS">
+
+            <label> TPS </label> 
+
+        </div>
+
+        <div class="divCasella">
+
+
+            <input type="checkbox" id="informatica">
+
+            <label> Informatica </label> 
+
+        </div>
+
+        <div class="divCasella">
+
+
+            <input type="checkbox" id="telecomunicazioni">
+
+            <label> Telecomunicazioni </label> 
+
+        </div>
+
+        <div class="divCasella">
+
+            <input type="button" onclick="stampa()" value="Invio">
+
+        </div>
+
+    </body>
+
+    <script>
+
+        let province = ["Milano", "Varese", "Catanzaro", "Bari", "Foggia", "Taranto", "Palermo", "Trapani", "Siracusa", "Potenza"];
+
+        var menu = document.getElementById("Province");
+
+        for(let i = 0; i < province.length; i++) {
+
+            var elemento = document.createElement("option");
+
+            elemento.text = province[i];
+
+            elemento.value = province[i];
+
+            menu.appendChild(elemento)
+        }
+
+        function stampa() {
+
+            var nome = document.getElementById("nome").value;
+
+            var cognome = document.getElementById("cognome").value;
+
+            var indirizzo = document.getElementById("indirizzo").value;
+
+            var data = document.getElementById("data").value;
+
+            var città = document.getElementById("Città").value;
+
+            var CAP = document.getElementById("CAP").value;
+
+            var fem = document.getElementById("fem");
+
+            var masch = document.getElementById("mash");
+
+            var italiano = document.getElementById("italiano");
+
+            var storia = document.getElementById("storia");
+
+            var matematica = document.getElementById("matematica");
+
+            var sistemi = document.getElementById("sistemi");
+
+            var tps = document.getElementById("TPS");
+
+            var informatica = document.getElementById("informatica");
+
+            var telecomunicazioni = document.getElementById("telecomunicazioni");
+
+            var materie = "";
+
+            var provincia = document.getElementById("Province").value;
+
+            if(italiano.checked) { materie += "- Italiano \n" }
+
+            if(storia.checked) { materie += "- Storia \n" }
+
+            if(matematica.checked) { materie += "- Matematica \n" }
+
+            if(sistemi.checked) { materie += "- Sistemi \n" }
+
+            if(tps.checked) { materie += "- TPS \n" }
+
+            if(informatica.checked) { materie += "- Informatica \n" }
+
+            if(telecomunicazioni.checked) { materie += "- Telecomunicazioni \n" }
+
+            let vet = [];
+
+            vet.push(nome); vet.push(cognome);  vet.push(indirizzo);    vet.push(data); vet.push(CAP);  vet.push(fem.checked ? "Femmina" : "Maschio");   vet.push(materie); vet.push(provincia);    vet.push(città);
+
+            localStorage.setItem("dati", vet);
+
+            window.location.href="Risultato.html";
+        }
+
+    </script>
+</html>
