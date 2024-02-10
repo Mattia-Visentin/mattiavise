@@ -171,3 +171,21 @@ a {
     text-decoration: none;
     font-size: 120%;
 }
+
+p:hover {
+
+    text-shadow: 0 0 30px white;
+}
+
+.bottone:hover {
+
+    text-shadow: 0 0 15px white;
+}
+
+.bottone {
+
+    color:white;
+    font-family: "Principale";
+    text-decoration: none;
+    font-size: 120%;
+}
