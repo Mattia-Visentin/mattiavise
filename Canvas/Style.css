@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "PrincipaleLight";
+    src: url("Comfortaa-Light.ttf");
+}
+
+@font-face {
+    font-family: "PrincipaleBold";
+    src: url("Comfortaa-Bold.ttf");
+}
+
+body {
+
+    background-color: black;
+
+    margin: 30px;
+
+    padding: 0;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100vh;
+
+    overflow-y: hidden;
+}
+
+h1 {
+
+    font-family: "PrincipaleBold";
+
+    color: white;
+
+    font-size: 400%;
+}
+
+canvas {
+
+    margin-top: 20px;
+
+    background-color: white;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 30px white;
+}
