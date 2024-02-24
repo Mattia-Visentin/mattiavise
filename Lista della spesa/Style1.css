@@ -1,0 +1,356 @@
+@font-face {
+    font-family: "PrincipaleLight";
+    src: url("Comfortaa-Light.ttf");
+}
+
+@font-face {
+    font-family: "PrincipaleBold";
+    src: url("Comfortaa-Bold.ttf");
+}
+
+body {
+
+    background-color: white;
+
+    margin: 0;
+
+    padding: 0;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+.generale {
+
+    width: 600px;
+
+    box-shadow: 200px;
+
+    padding-left: calc((100% - 600px) / 2);
+
+    margin-top: 50px;
+}
+
+#esito {
+
+    width: 100%;
+
+    height: 50px;
+
+    border-radius: 20px;
+
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+
+    text-align: center;
+
+    display: none;
+
+    font-family: "PrincipaleBold";
+
+    color: black;
+
+    margin-bottom: 30px;
+}
+
+.form {
+
+    text-align: center;
+
+    border: 1px solid black;
+
+    color: black;
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 15px black;
+}
+
+.form2 {
+
+    text-align: center;
+
+    border: 1px solid black;
+
+    color: black;
+
+    width: 100%;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 15px black;
+
+    display: none;
+
+    margin-bottom: 50px;
+}
+
+.username {
+
+    font-family: "PrincipaleLight";
+
+    margin-bottom: 5%;
+}
+
+.passrd {
+
+    font-family: "PrincipaleLight";
+}
+
+.inputTesto:hover {
+
+    box-shadow: 0 0 15px black;
+}
+
+.inputTesto {
+
+    width: 40%;
+
+    height: 20%;
+    
+    min-width: 120px;
+
+    min-height: 30px;
+
+    max-height: 30px;
+
+    max-width: 150px;
+
+    border-radius: 20px;
+
+    border: 1px solid black;
+
+    background-color: white;
+
+    color: black;
+
+    text-align: center;
+
+    font-family: "PrincipaleLight";
+
+    margin-top: 3%;
+}
+
+input[type="text"] {
+
+    width: 40%;
+
+    height: 20%;
+    
+    min-width: 120px;
+
+    min-height: 30px;
+
+    max-height: 30px;
+
+    max-width: 150px;
+
+    border-radius: 20px;
+
+    border: 1px solid black;
+
+    background-color: white;
+
+    color: black;
+
+    text-align: center;
+
+    font-family: "PrincipaleLight";
+
+    margin-top: 3%;
+}
+
+.bottone1 {
+
+    border: none;
+    
+    margin-left: 10px;
+
+    width: 20%;
+
+    height: 30%;
+    
+    min-width: 50px;
+
+    min-height: 30px;
+
+    max-height: 40px;
+
+    max-width: 150px;
+
+    border-radius: 20px; 
+
+    background-color: black;
+
+    color: white;
+
+    text-align: center;
+
+    font-family: "PrincipaleBold";
+
+    margin-top: 3%;
+
+    margin-bottom: 20px;
+}
+
+.bottone2 {
+
+    border: 1px solid black;
+    
+    margin-left: 10px;
+
+    width: 20%;
+
+    height: 30%;
+    
+    min-width: 50px;
+
+    min-height: 30px;
+
+    max-height: 40px;
+
+    max-width: 150px;
+
+    border-radius: 20px; 
+
+    background-color: white;
+
+    color: black;
+
+    text-align: center;
+
+    font-family: "PrincipaleBold";
+
+    margin-top: 7%;
+}
+
+.bottone2:hover {
+
+    box-shadow: 0 0 15px black;
+}
+
+input[type="text"]:hover {
+
+    box-shadow: 0 0 15px black;
+}
+
+.bottone1:hover {
+
+    border: 1px solid black;
+
+    width: 20%;
+
+    height: 30%;
+    
+    min-width: 50px;
+
+    min-height: 30px;
+
+    max-height: 40px;
+
+    max-width: 150px;
+
+    border-radius: 20px; 
+
+    background-color: white;
+
+    color: black;
+
+    text-align: center;
+
+    font-family: "PrincipaleBold";
+
+    margin-top: 3%;
+
+    box-shadow: 0 0 15px black;
+}
+
+
+.titolo {
+
+    font-family: "PrincipaleBold";
+
+    font-size: xx-large;
+}
+
+label {
+
+    margin-right: 20px;
+}
+
+h3 {
+
+    font-family: "PrincipaleBold";
+
+    font-size: x-large;
+
+    color: black;
+}
+
+button {
+
+    border: none;
+
+    background-color: white;
+
+}
+
+img {
+
+    border: none;
+
+    background-color: white;
+
+    padding: 0px;
+
+    margin: 0px;
+
+    align-self: left;
+}
+
+p {
+
+    margin-bottom: 130px;
+
+}
+
+.listaElemento {
+
+    color: black;
+
+    font-family: "PrincipaleLight";
+
+    text-align: left;
+
+}
+
+.buttoneElimina {
+
+    border: 1px solid black;
+
+    border-radius: 50%;
+
+    margin-right: 10px;
+}
+
+.out2 {
+
+    margin-bottom: 20px;
+
+    padding-left: 20%;
+}
+
+.out3 {
+
+    text-align: center;
+
+    display: flex;
+
+    margin-bottom: 10px;
+}
