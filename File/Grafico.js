@@ -55,7 +55,7 @@ function disegnaPunti(data) {
 
     var baseY = 390;
 
-    var distanzaPunti = 500 / (data.length - 1);
+    var distanzaPunti = 700 / (data.length - 1);
     
     grafico.lineWidth = 2;
 
