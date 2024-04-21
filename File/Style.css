@@ -91,6 +91,27 @@ body {
     margin-bottom: 1%;
 }
 
+.form3 {
+
+    text-align: center;
+
+    border: 1px solid black;
+
+    color: black;
+
+    margin: 5%;
+
+    width: calc(100% - 10%);
+
+    padding-bottom: 30px;
+
+    border-radius: 30px;
+
+    box-shadow: 0 0 15px black;
+
+    margin-bottom: 1%;
+}
+
 .spazioFile {
 
     font-family: "PrincipaleLight";

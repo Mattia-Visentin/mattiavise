@@ -12,7 +12,7 @@ function disegnaAssi() {
 
     let baseY = 390;
 
-    let chartWidth = 500;
+    let chartWidth = 700;
 
     var leftY, rightX;
 
@@ -79,6 +79,5 @@ let dati = localStorage.getItem("Dati");
 
 disegnaPunti(dati.split(","));
 
-// Chiama la funzione per disegnare il grafico
 disegnaAssi();
 
