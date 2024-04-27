@@ -54,26 +54,28 @@ function disegnaPunti(data) {
     var baseX = 50;
 
     var baseY = 390;
-
+    
     var distanzaPunti = 700 / (data.length - 1);
     
-    grafico.lineWidth = 2;
+    grafico.strokeStyle = '#50BBBD';
+
+    grafico.lineWidth = 1;
+
+    grafico.beginPath();
 
     for (var i = 0; i < data.length; i++) {
 
-        grafico.beginPath();
+        var x = baseX + distanzaPunti * i;
 
-        var x = baseX + (distanzaPunti * i);
+        var y = baseY - (data[i] * 20);
 
-        var y = baseY - data[i];
-
-        grafico.arc(x, y, 7, 0, Math.PI * 2);
-
-        grafico.fill();
-
-        grafico.closePath();
+        grafico.lineTo(x, y);
     }
+
+    grafico.stroke();
 }
+
+
 
 let dati = localStorage.getItem("Dati");
 
