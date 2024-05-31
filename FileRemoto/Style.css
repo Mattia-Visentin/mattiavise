@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "PrincipaleLight";
+    src: url("Comfortaa-Light.ttf");
+}
+
+@font-face {
+    font-family: "PrincipaleBold";
+    src: url("Comfortaa-Bold.ttf");
+}
+
+body {
+
+    background-color: white;
+
+    margin: 0;
+
+    padding: 0;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100vh;
+}
+
+.generale {
+
+    width: 100%;
+
+    box-shadow: 200px;
+
+    padding-left: 20px;
+
+    margin-top: 50px;
+
+    text-align: left;
+}
+
+.passrd {
+
+    font-family: "PrincipaleLight";
+}
+
+.inputTesto:hover {
+
+    box-shadow: 0 0 15px black;
+}
+
+.titolo {
+
+    font-family: "PrincipaleBold";
+
+    font-size: 169%;
+
+    text-align: left;
+
+    margin-left: 1%;
+}
+
+table {
+
+    margin-left: 30px;
+
+    margin-right: 30px;
+
+    text-align: center;
+    
+    width: calc(600px - 10%);
+
+    overflow-x: scroll;
+}
+
+.tdGenerali {
+
+    border: 1px solid black;
+
+    border-radius: 7px;
+
+    width: calc(300px);
+
+    padding: 10px;
+    
+    font-family: "PrincipaleLight";
+}
+
+.tdTitolo {
+
+    border: 1px solid black;
+
+    border-radius: 7px;
+
+    width: calc(300px);
+
+    padding: 10px;
+    
+    font-family: "PrincipaleBold";
+}
