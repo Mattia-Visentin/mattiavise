@@ -1,6 +1,6 @@
 const xhttp = new XMLHttpRequest();
 
-xhttp.open('GET', 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv')
+xhttp.open('GET', 'https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-andamento-nazionale/dpc-covid19-ita-andamento-nazionale.csv', true)
 
 xhttp.onreadystatechange = function() {
 
@@ -10,7 +10,7 @@ xhttp.onreadystatechange = function() {
 
         let tabella = document.createElement("table");
 
-        var str=xhttp.response;
+        var str = xhttp.response;
 
         let dati = str.split("\n");
 
