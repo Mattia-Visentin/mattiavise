@@ -77,9 +77,6 @@
 
     "Telefoni": [
 
-        {
-            "Telefoni": [
-
                 {
                     "Telefono1": "6548585855",
 
@@ -97,14 +94,11 @@
 
                     "Telefono2": "7868876868"
                 }
-            ]
-        }
+            
     ],
 
     "Sport": [
 
-        {
-            "Sport": [
 
                 {
                     "Sport1": "Calcio",
@@ -123,7 +117,6 @@
 
                     "Sport2": "Badminghton"
                 }
-            ]
-        }
+           
     ]
 }
