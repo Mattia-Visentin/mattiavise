@@ -39,13 +39,13 @@ function mostraInfo(ogg) {
         
         righe.appendChild(document.createTextNode(ogg.Citta[i].Citta + ", "));
 
-        righe.appendChild(document.createTextNode("Telefono1: " + ogg.Telefoni[0].Telefoni[i].Telefono1 + ", "));
+        righe.appendChild(document.createTextNode(ogg.Telefoni[i].Telefono1 == undefined ? "" : "Telefono1: " + ogg.Telefoni[i].Telefono1 + ", "));
        
-        righe.appendChild(document.createTextNode("Telefono2: " + ogg.Telefoni[0].Telefoni[i].Telefono2 + ", "));
+        righe.appendChild(document.createTextNode(ogg.Telefoni[i].Telefono2 == undefined ? "" : ogg.Telefoni[i].Telefono1 == undefined ? "Telefono1: " + ogg.Telefoni[i].Telefono2 + ", " : "Telefono1: " + ogg.Telefoni[i].Telefono2 + ", "));
 
-        righe.appendChild(document.createTextNode("Sport1: " + ogg.Sport[0].Sport[i].Sport1 + ", "));
+        righe.appendChild(document.createTextNode(ogg.Sport[i].Sport1 == undefined ? "" :  "Sport1: " + ogg.Sport[i].Sport1 + ", "));
         
-        righe.appendChild(document.createTextNode("Sport2: " + ogg.Sport[0].Sport[i].Sport2 + " "));
+        righe.appendChild(document.createTextNode(ogg.Sport[i].Sport2 == undefined ? "" : ogg.Sport[i].Sport1 == undefined ? "Sport1: " + ogg.Sport[i].Sport2 + " " : "Sport1: " + ogg.Sport[i].Sport2 + " "));
 
         colonna.appendChild(righe);
         
