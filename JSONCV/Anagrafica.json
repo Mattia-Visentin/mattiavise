@@ -1,33 +1,32 @@
 {   
 
-"Immagini": [
+    "Immagini": [
 
         {
-            "Immagine": "Antonio Rossi.webp"
+            "Immagine": "Immagine.jpg"
         },
 
         {
-            "Immagine": "Sara Rossi.webp"
+            "Immagine": "Immagine2.jpg"
         },
 
         {
-            "Immagine": "Filippo verdi.webp"
+            "Immagine": "Fiippoverdi.jpg"
         }
         
     ],
-
     "Nomi": [
 
         {
-            "Nome": "Antonio"
+            "Nome": "Sara"
         },
 
         {
-            "Nome": "Luigi"
+            "Nome": "Luca"
         },
 
         {
-            "Nome": "Filippo"
+            "Nome": "Maria"
         }
         
     ],
@@ -56,14 +55,7 @@
         {
             "Eta": "21"
         },
-
-        {
-            "Eta": "24"
-        }
-    ],
-
-    "Indirizzi": [
-
+        
         {
             "Indirizzo": "Via Milano"
         },
@@ -95,9 +87,8 @@
     "Telefoni": [
 
                 {
-                    "Telefono1": "9948248857",
+                    "Telefono1": "6548585855"
 
-                    "Telefono2": "8778878765"
                 },
 
                 {
@@ -134,6 +125,6 @@
 
                     "Sport2": "Badminghton"
                 }
-           
-    ]
+            ]
+    
 }
