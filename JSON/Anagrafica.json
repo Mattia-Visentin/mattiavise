@@ -1,4 +1,21 @@
-{
+{   
+
+"Immagini": [
+
+        {
+            "Immagine": "Immagine.jpg"
+        },
+
+        {
+            "Immagine": "Immagine2.jpg"
+        },
+
+        {
+            "Immagine": "Fiippoverdi.jpg"
+        }
+        
+    ],
+    
     "Nomi": [
 
         {
