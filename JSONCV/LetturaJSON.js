@@ -49,39 +49,39 @@ function mostraInfo(ogg) {
        
         var rigaNome = document.createElement("td");
 
-        rigaNome.appendChild(document.createTextNode(ogg.Nomi[i].Nome));
+        rigaNome.appendChild(document.createTextNode(ogg[i].Nome));
 
         var rigaCognome = document.createElement("td");
         
-        rigaCognome.appendChild(document.createTextNode(ogg.Cognomi[i].Cognome));
+        rigaCognome.appendChild(document.createTextNode(ogg[i].Cognome));
 
         var rigaEta = document.createElement("td");
         
-        rigaEta.appendChild(document.createTextNode(ogg.Eta[i].Eta));
+        rigaEta.appendChild(document.createTextNode(ogg[i].Eta));
 
         var rigaIndirizzo = document.createElement("td");
         
-        rigaIndirizzo.appendChild(document.createTextNode(ogg.Indirizzi[i].Indirizzo ));
+        rigaIndirizzo.appendChild(document.createTextNode(ogg[i].Indirizzo));
 
         var rigaCitta = document.createElement("td");
         
-        rigaCitta.appendChild(document.createTextNode(ogg.Citta[i].Citta));
+        rigaCitta.appendChild(document.createTextNode(ogg[i].Citta));
 
         var rigaTelefono1 = document.createElement("td");
 
-        rigaTelefono1.appendChild(document.createTextNode(ogg.Telefoni[i].Telefono1 == undefined ? "" :  ogg.Telefoni[i].Telefono1));
+        rigaTelefono1.appendChild(document.createTextNode(ogg[i].Telefoni[0].Telefono1 == undefined ? "" :  ogg[i].Telefoni[0].Telefono1));
 
         var rigaTelefono2 = document.createElement("td");
        
-        rigaTelefono2.appendChild(document.createTextNode(ogg.Telefoni[i].Telefono2 == undefined ? "" : ogg.Telefoni[i].Telefono2));
+        rigaTelefono2.appendChild(document.createTextNode(ogg[i].Telefoni[1].Telefono2 == undefined ? "" : ogg[i].Telefoni[1].Telefono2));
         
         var rigaSport1 = document.createElement("td");
 
-        rigaSport1.appendChild(document.createTextNode(ogg.Sport[i].Sport1 == undefined ? "" :  ogg.Sport[i].Sport1));
+        rigaSport1.appendChild(document.createTextNode(ogg[i].Sport[0].Sport1 == undefined ? "" :  ogg[i].Sport[0].Sport1));
         
         var rigaSport2 = document.createElement("td");
 
-        rigaSport2.appendChild(document.createTextNode(ogg.Sport[i].Sport2 == undefined ? "" : ogg.Sport[i].Sport2));
+        rigaSport2.appendChild(document.createTextNode(ogg[i].Sport[1].Sport2 == undefined ? "" : ogg[i].Sport[1].Sport2));
 
         var img = document.createElement("td");
 
