@@ -2,7 +2,9 @@
     "Anagrafica": [
 
         {
-            "Immagine": "",
+            "id": "1",
+
+            "Immagine": "Sara Rossi.webp",
             
             "Nome": "Sara",
 
@@ -39,7 +41,9 @@
         },
 
         {
-            "Immagine": "",
+            "id": "2",
+
+            "Immagine": "Antonio Rossi.webp",
             
             "Nome": "Luca",
 
@@ -75,8 +79,10 @@
             ]
         },
 
-        {
-            "Immagine": "",
+        {   
+            "id": "3",
+
+            "Immagine": "Filippo verdi.webp",
             
             "Nome": "Maria",
 

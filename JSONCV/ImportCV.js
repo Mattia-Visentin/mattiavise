@@ -1,12 +1,14 @@
-let indiceCV = localStorage.getItem("Indice");
+let indiceCV = localStorage.getItem("id");
 
 caricaDatiCV(indiceCV);
 
 function caricaDatiCV(indice) {
 
     var file = new XMLHttpRequest();
+
+    let nameFile = "https://raw.githubusercontent.com/Mattia-Visentin/mattiavise/refs/heads/main/JSONCV/" + indice + ".json";
     
-    file.open("GET", "https://raw.githubusercontent.com/Mattia-Visentin/mattiavise/refs/heads/main/JSONCV/CurriculumAnag.json", true);
+    file.open("GET", nameFile, true);
     
     file.send();
     
@@ -48,19 +50,19 @@ function mostraInfoCV(ogg, indice) {
 
     nominativoTit.appendChild(document.createTextNode("Nominativo"));
 
-    nominativo.appendChild(document.createTextNode(ogg.Nominativi[indice].Nominativo));
+    nominativo.appendChild(document.createTextNode(ogg.Nominativo));
 
     posizioniTit.appendChild(document.createTextNode("Posizioni"));
 
-    posizioni.appendChild(document.createTextNode(ogg.Posizioni[indice].Posizione));
+    posizioni.appendChild(document.createTextNode(ogg.Posizione));
 
     esperienzaTit.appendChild(document.createTextNode("Esperienza"));
 
-    esperienza.appendChild(document.createTextNode(ogg.Esperienze[indice].Esperienza));
+    esperienza.appendChild(document.createTextNode(ogg.Esperienza));
     
     descrizioneTit.appendChild(document.createTextNode("Descrizione"));
 
-    descrizione.appendChild(document.createTextNode(ogg.Descrizioni[indice].Descrizione));
+    descrizione.appendChild(document.createTextNode(ogg.Descrizione));
 
     document.getElementById("intestazione").appendChild(immagine);
 

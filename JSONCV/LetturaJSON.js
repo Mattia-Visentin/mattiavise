@@ -87,13 +87,13 @@ function mostraInfo(ogg) {
 
         let bottone = document.createElement("img");
 
-        bottone.src = ogg.Immagini[i].Immagine === undefined ? "" : ogg.Immagini[i].Immagine;
+        bottone.src = ogg[i].Immagine === undefined ? "" : ogg[i].Immagine;
 
         bottone.classList.add("immagineProfilo")
 
         bottone.addEventListener("click", function() {
 
-            localStorage.setItem("Indice", i);
+            localStorage.setItem("id", ogg[i].id);
 
             console.log("Bottone premuto");
 
