@@ -46,7 +46,7 @@ function mostraInfoCV(ogg, indice) {
 
     let immagine = document.createElement("img");
 
-    immagine.src = ogg.Immagini[indice].Immagine === undefined ? "" : ogg.Immagini[indice].Immagine;
+    immagine.src = ogg.Immagine === undefined ? "" : ogg.Immagine;
 
     nominativoTit.appendChild(document.createTextNode("Nominativo"));
 

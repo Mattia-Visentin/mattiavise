@@ -49,51 +49,51 @@ function mostraInfo(ogg) {
        
         var rigaNome = document.createElement("td");
 
-        rigaNome.appendChild(document.createTextNode(ogg[i].Nome));
+        rigaNome.appendChild(document.createTextNode(ogg.Anagrafica[i].Nome));
 
         var rigaCognome = document.createElement("td");
         
-        rigaCognome.appendChild(document.createTextNode(ogg[i].Cognome));
+        rigaCognome.appendChild(document.createTextNode(ogg.Anagrafica[i].Cognome));
 
         var rigaEta = document.createElement("td");
         
-        rigaEta.appendChild(document.createTextNode(ogg[i].Eta));
+        rigaEta.appendChild(document.createTextNode(ogg.Anagrafica[i].Eta));
 
         var rigaIndirizzo = document.createElement("td");
         
-        rigaIndirizzo.appendChild(document.createTextNode(ogg[i].Indirizzo));
+        rigaIndirizzo.appendChild(document.createTextNode(ogg.Anagrafica[i].Indirizzo));
 
         var rigaCitta = document.createElement("td");
         
-        rigaCitta.appendChild(document.createTextNode(ogg[i].Citta));
+        rigaCitta.appendChild(document.createTextNode(ogg.Anagrafica[i].Citta));
 
         var rigaTelefono1 = document.createElement("td");
 
-        rigaTelefono1.appendChild(document.createTextNode(ogg[i].Telefoni[0].Telefono1 == undefined ? "" :  ogg[i].Telefoni[0].Telefono1));
+        rigaTelefono1.appendChild(document.createTextNode(ogg.Anagrafica[i].Telefoni[0].Telefono1 == undefined ? "" :  ogg.Anagrafica[i].Telefoni[0].Telefono1));
 
         var rigaTelefono2 = document.createElement("td");
        
-        rigaTelefono2.appendChild(document.createTextNode(ogg[i].Telefoni[1].Telefono2 == undefined ? "" : ogg[i].Telefoni[1].Telefono2));
+        rigaTelefono2.appendChild(document.createTextNode(ogg.Anagrafica[i].Telefoni[1].Telefono2 == undefined ? "" : ogg.Anagrafica[i].Telefoni[1].Telefono2));
         
         var rigaSport1 = document.createElement("td");
 
-        rigaSport1.appendChild(document.createTextNode(ogg[i].Sport[0].Sport1 == undefined ? "" :  ogg[i].Sport[0].Sport1));
+        rigaSport1.appendChild(document.createTextNode(ogg.Anagrafica[i].Sport[0].Sport1 == undefined ? "" :  ogg.Anagrafica[i].Sport[0].Sport1));
         
         var rigaSport2 = document.createElement("td");
 
-        rigaSport2.appendChild(document.createTextNode(ogg[i].Sport[1].Sport2 == undefined ? "" : ogg[i].Sport[1].Sport2));
+        rigaSport2.appendChild(document.createTextNode(ogg.Anagrafica[i].Sport[1].Sport2 == undefined ? "" : ogg.Anagrafica[i].Sport[1].Sport2));
 
         var img = document.createElement("td");
 
         let bottone = document.createElement("img");
 
-        bottone.src = ogg[i].Immagine === undefined ? "" : ogg[i].Immagine;
+        bottone.src = ogg.Anagrafica[i].Immagine === undefined ? "" : ogg.Anagrafica[i].Immagine;
 
         bottone.classList.add("immagineProfilo")
 
         bottone.addEventListener("click", function() {
 
-            localStorage.setItem("id", ogg[i].id);
+            localStorage.setItem("id", ogg.Anagrafica[i].id);
 
             console.log("Bottone premuto");
 
