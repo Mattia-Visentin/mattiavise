@@ -2,7 +2,7 @@ function caricaDati() {
 
     var file = new XMLHttpRequest();
     
-    file.open("GET", "https://raw.githubusercontent.com/Mattia-Visentin/mattiavise/refs/heads/main/JSON/Anagrafica.json", true);
+    file.open("GET", "https://raw.githubusercontent.com/Mattia-Visentin/mattiavise/refs/heads/main/JSONCV/Anagrafica.json", true);
     
     file.send();
     
