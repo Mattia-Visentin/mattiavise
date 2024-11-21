@@ -23,7 +23,7 @@ body {
 
 .navbar {
 
-    background-color: #222;
+    background-color: #a7a7a7;
 
     display: flex;
 
@@ -50,7 +50,7 @@ body {
 
     font-family: 'Principale';
 
-    color: white;
+    color: black;
 
     margin-right: 20px;
 
@@ -63,7 +63,7 @@ body {
 
     font-family: 'PrincipaleBold';
 
-    color: white;
+    color: black;
 
     margin-right: 99px;
 
@@ -72,7 +72,7 @@ body {
 
 .navbar-right {
 
-    border: 1px solid white;
+    border: 1px solid black;
 
     border-radius: 10px;
 
@@ -82,7 +82,7 @@ body {
 
 .navbar-right {
 
-    border: 1px solid white;
+    border: 1px solid black;
 
     border-radius: 10px;
 
@@ -96,7 +96,7 @@ body {
 
 .navbar-right:hover {
 
-    border: 1px solid white;
+    border: 1px solid black;
 
     background-color: white;
 
@@ -113,7 +113,7 @@ body {
 
     font-family: 'Principale';
 
-    color: white;
+    color: black;
 
     text-decoration: none;
 
@@ -143,16 +143,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5%;
-    margin: 30px;
+    margin: 90px;
 }
 
 .box {
     width: 70%;
     max-width: 500px;
     height: 150px;
-    border: 1px white solid;
+    border: 1px black solid;
     border-radius: 30px;
-    background-color: black;
+    background-color: white;
     margin: 20px;
     text-align: center;
     display: flex;
@@ -162,12 +162,13 @@ body {
 }
 
 .box:hover {
-    background-color: #333;
+    background-color: #a7a7a748;
+    box-shadow: 0 0 30px black;
 }
 
 a {
     
-    color:white;
+    color:black;
     font-family: "Principale";
     text-decoration: none;
     font-size: 120%;
@@ -175,18 +176,50 @@ a {
 
 p:hover {
 
-    text-shadow: 0 0 30px white;
+    text-shadow: 0 0 30px black;
 }
 
 .bottone:hover {
 
-    text-shadow: 0 0 15px white;
+    text-shadow: 0 0 15px black;
 }
 
 .bottone {
 
-    color:white;
+    color:black;
     font-family: "Principale";
     text-decoration: none;
     font-size: 120%;
+}
+
+h1 {
+
+    font-family: "PrincipaleBold";
+
+    color: black;
+
+    font-size: 300%;
+
+    text-align: center;
+}
+
+h2 {
+
+    font-family: "Principale";
+
+    color: black;
+
+    font-size: 150%;
+
+    text-align: center;
+}
+
+h1:hover {
+
+    text-shadow: 0 0 30px black;
+}
+
+h2:hover {
+
+    text-shadow: 0 0 30px black;
 }
