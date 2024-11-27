@@ -3,6 +3,15 @@
 
     "Nominativo": "Antonio Rossi",
 
+    "Dati": {
+
+        "Numero": "7827798999",
+
+        "Mail": "antonio.rossi@mail.com",
+
+        "Indirizzo": "Via Varese, Novara"
+    },
+
     "Posizione": "Sviluppatore",
 
     "Esperienza": "5 Anni",
