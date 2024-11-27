@@ -54,11 +54,15 @@ function mostraInfoCV(ogg, indice) {
 
     nominativo.appendChild(document.createTextNode(ogg.Nominativo));
 
-    dati.appendChild(document.createTextNode("Mail: " + ogg.Dati.Mail + "\n"));
+    dati.appendChild(document.createTextNode("Mail: " + ogg.Dati.Mail));
+
+    dati.appendChild(document.createElement("br"));
     
-    dati.appendChild(document.createTextNode("Telefono: " + ogg.Dati.Telefono + "\n"));
+    dati.appendChild(document.createTextNode("Telefono: " + ogg.Dati.Numero));
+
+    dati.appendChild(document.createElement("br"));
     
-    dati.appendChild(document.createTextNode("Indirizzo: " + ogg.Dati.Indirizzo + "\n"));
+    dati.appendChild(document.createTextNode("Indirizzo: " + ogg.Dati.Indirizzo));
 
     posizioniTit.appendChild(document.createTextNode("Posizioni"));
 
@@ -75,6 +79,8 @@ function mostraInfoCV(ogg, indice) {
     document.getElementById("intestazione").appendChild(immagine);
 
     document.getElementById("intestazione").appendChild(nominativo);
+
+    dati.classList.add("InfoDati");
 
     document.getElementById("contenutoCV").appendChild(dati);
 

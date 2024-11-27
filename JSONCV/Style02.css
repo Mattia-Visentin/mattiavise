@@ -60,3 +60,12 @@ h1 {
 
     display: flex;
 }
+
+.InfoDati {
+
+    color: black;
+
+    font-family: "PrincipaleLight";
+
+    font-size: small;
+}
