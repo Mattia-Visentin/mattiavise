@@ -76,7 +76,7 @@ function mostraInfoCV(ogg, indice) {
 
     document.getElementById("intestazione").appendChild(nominativo);
 
-    document.getElementById("intestazione").appendChild(dati);
+    document.getElementById("contenutoCV").appendChild(dati);
 
     document.getElementById("contenutoCV").appendChild(posizioniTit);
 
