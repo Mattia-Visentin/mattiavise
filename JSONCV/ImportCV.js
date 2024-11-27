@@ -54,11 +54,11 @@ function mostraInfoCV(ogg, indice) {
 
     nominativo.appendChild(document.createTextNode(ogg.Nominativo));
 
-    dati.appendChild("Mail: " + ogg.Dati.Mail + "\n");
+    dati.appendChild(document.createTextNode("Mail: " + ogg.Dati.Mail + "\n"));
     
-    dati.appendChild("Telefono: " + ogg.Dati.Telefono + "\n");
+    dati.appendChild(document.createTextNode("Telefono: " + ogg.Dati.Telefono + "\n"));
     
-    dati.appendChild("Indirizzo: " + ogg.Dati.Indirizzo + "\n");
+    dati.appendChild(document.createTextNode("Indirizzo: " + ogg.Dati.Indirizzo + "\n"));
 
     posizioniTit.appendChild(document.createTextNode("Posizioni"));
 
