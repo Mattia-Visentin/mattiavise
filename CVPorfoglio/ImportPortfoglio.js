@@ -24,6 +24,8 @@ function gestisciXML(xml) {
 
     var xmlDoc = xml.responseXML;
 
+    console.log(xml.responseXML)
+
     var utente = xmlDoc.getElementsByTagName("Utente");
 
     const titolo = utente[0].getElementsByTagName("Titolo")[0].childNodes[0].nodeValue;
