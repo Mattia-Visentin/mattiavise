@@ -2,33 +2,11 @@
 
 <Utente>
     
-    <1>
+    <Titolo> Calcolatrice Scientifica </Titolo>
 
-        <Titolo> </Titolo>
+    <Abstract> Pagina HTML che permette di eseguire calcoli con funzioni matematica complesse </Abstract>
 
-        <Abstract> </Abstract>
-
-        <Link> </Link>
-        
-    </1>
-
-    <2>
-
-        <Titolo> </Titolo>
-
-        <Abstract> </Abstract>
-
-        <Link> </Link>
-    </2>
-
-    <3>
-
-        <Titolo> </Titolo>
-
-        <Abstract> </Abstract>
-
-        <Link> </Link>
-    </3>
+    <Link> https://mattia-visentin.github.io/mattiavise/Calcolatrice/Calcolatrice.html </Link>
     
 
 </Utente>

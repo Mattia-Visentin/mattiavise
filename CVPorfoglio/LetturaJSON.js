@@ -28,7 +28,7 @@ function mostraInfo(ogg) {
     
     var tabella = document.createElement("table");
 
-    var colonnaIndici = ["Immagine", "Nome", "Cognome", "Età", "Indirizzo", "Città", "Telefono 1", "Telefono 2", "Sport 1", "Sport 2"];
+    var colonnaIndici = ["Immagine", "Nome", "Cognome", "Età", "Indirizzo", "Città", "Telefono 1", "Telefono 2", "Sport 1", "Sport 2", "PortFoglio"];
 
     var colonnaTit = document.createElement("tr");
 
@@ -40,6 +40,14 @@ function mostraInfo(ogg) {
 
         colonnaTit.appendChild(righe);
     }
+
+    const titolo = document.createElement("h1");
+
+    titolo.classList.add("Titolo");
+
+    titolo.appendChild(document.createTextNode("Anagrafica"))
+
+    document.getElementById("stringaJSON").appendChild(titolo);
 
     tabella.appendChild(colonnaTit);
 
@@ -100,7 +108,26 @@ function mostraInfo(ogg) {
             window.location.href = "Cv.html";
         });
 
+        let bottonePt = document.createElement("img");
+
+        bottonePt.src = "Documento.svg";
+
+        bottonePt.classList.add("immagine")
+
+        bottonePt.addEventListener("click", function() {
+
+            localStorage.setItem("indice", ogg.Anagrafica[i].id);
+
+            console.log("Bottone premuto");
+
+            window.location.href = "Portfoglio.html";
+        });
+
         var rigaBottone = document.createElement("td");
+
+        var rigaBottonePf = document.createElement("td");
+
+        rigaBottonePf.appendChild(bottonePt);
         
         rigaBottone.appendChild(bottone);
         
@@ -123,6 +150,8 @@ function mostraInfo(ogg) {
         colonna.appendChild(rigaSport1);
 
         colonna.appendChild(rigaSport2);
+
+        colonna.appendChild(rigaBottonePf);
 
         tabella.appendChild(colonna);
     }

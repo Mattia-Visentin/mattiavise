@@ -1,28 +1,41 @@
-caricaDatiCV();
+caricaFile(localStorage.getItem("indice"));
 
-function caricaDatiCV() {
+function caricaFile(indice) {
 
-    var file = new XMLHttpRequest();
+    var xhttp = new XMLHttpRequest();
 
-    let nameFile = "http://localhost/fileLocali/1.xml";
-    
-    file.open("GET", nameFile, true);
-    
-    file.send();
-    
-    file.onreadystatechange = function() {
-        
-        if (this.readyState == 4 && this.status == 200) {
-            
-            mostraInfoCV(this);
-        }
+    xhttp.onreadystatechange = function() {
+
+      if (this.readyState == 4 && this.status == 200) {
+
+        gestisciXML(this);
+      
+      }
     };
 
+    const nome = "https://raw.githubusercontent.com/Mattia-Visentin/mattiavise/refs/heads/main/CVPorfoglio/" + indice + ".xml"
+
+    xhttp.open("GET", nome, true);
+
+    xhttp.send();
 }
 
-function mostraInfoCV(Doc) {
+function gestisciXML(xml) {
 
-    var xmlDoc = Doc.responseText;
+    var xmlDoc = xml.responseXML;
 
-    document.getElementById("contenutoCV").innerHTML = xmlDoc.getElementByTagName("Abstract")[0].textContent;
-}   
+    var utente = xmlDoc.getElementsByTagName("Utente");
+
+    const titolo = utente[0].getElementsByTagName("Titolo")[0].childNodes[0].nodeValue;
+
+    const abstract = utente[0].getElementsByTagName("Abstract")[0].childNodes[0].nodeValue;
+
+    const risorsa = utente[0].getElementsByTagName("Link")[0].childNodes[0].nodeValue;
+
+    document.getElementById("outTitolo").innerHTML = titolo;
+
+    document.getElementById("outAbstract").innerHTML = abstract;
+
+    document.getElementById("outRisorsa").innerHTML = risorsa;
+
+  }

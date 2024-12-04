@@ -2,33 +2,11 @@
 
 <Utente>
     
-    <1>
+    <Titolo> Valutazioni </Titolo>
 
-        <Titolo> </Titolo>
+    <Abstract> File html che permette di inserire i dati in un form e inserire le proprie valutazioni</Abstract>
 
-        <Abstract> </Abstract>
-
-        <Link> </Link>
-        
-    </1>
-
-    <2>
-
-        <Titolo> </Titolo>
-
-        <Abstract> </Abstract>
-
-        <Link> </Link>
-    </2>
-
-    <3>
-
-        <Titolo> </Titolo>
-
-        <Abstract> </Abstract>
-
-        <Link> </Link>
-    </3>
+    <Link> https://mattia-visentin.github.io/mattiavise/Valutazioni/Valutazioni.html </Link>
     
 
 </Utente>
