@@ -8,7 +8,7 @@ function caricaFile(indice) {
 
       if (this.readyState == 4 && this.status == 200) {
 
-        gestisciXML(this, indice);
+        gestisciXML(this);
       
       }
     };
@@ -20,13 +20,13 @@ function caricaFile(indice) {
     xhttp.send();
 }
 
-function gestisciXML(xml, indice) {
+function gestisciXML(xml) {
 
     var xmlDoc = xml.responseXML;
 
     console.log(xml.responseXML)
 
-    var utente = xmlDoc.getElementsByTagName(indice);
+    var utente = xmlDoc.getElementsByTagName("Utente");
 
     const titolo = utente[0].getElementsByTagName("Titolo")[0].childNodes[0].nodeValue;
 
