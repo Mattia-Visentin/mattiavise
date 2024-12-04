@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "PrincipaleLight";
+    src: url("Comfortaa-Light.ttf");
+}
+
+@font-face {
+    font-family: "PrincipaleBold";
+    src: url("Comfortaa-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Principale";
+    src: url("Comfortaa-Regular.ttf");
+}
+
+body {
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin: 70px;
+}
+
+img {
+
+    width: 200px;
+
+    height: 200px;
+
+    border-radius: 50%;
+
+    border: 2px solid lightgray;
+}
+
+h2 {
+
+    font-family: "PrincipaleBold";
+}
+
+p  {
+
+    font-family: "Principale";
+
+    line-height: 150%;
+}
+
+h1 {
+
+    margin-top: 100px;
+
+    margin-left: 50px;
+
+    font-family: "PrincipaleBold";
+
+    font-size: xx-large;
+}
+
+.divTitolo {
+
+    display: flex;
+}
+
+.InfoDati {
+
+    color: black;
+
+    font-family: "PrincipaleLight";
+
+    font-size: small;
+}
