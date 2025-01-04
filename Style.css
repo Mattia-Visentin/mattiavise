@@ -148,7 +148,6 @@ body {
 
 .box {
     width: 70%;
-    max-width: 500px;
     height: 150px;
     border: 1px black solid;
     border-radius: 30px;
