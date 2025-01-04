@@ -143,11 +143,12 @@ body {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 5%;
-    margin: 90px;
+    margin: 10%;
 }
 
 .box {
-    width: 90%;
+    width: 100%;
+    max-width: 500px;
     height: 150px;
     border: 1px black solid;
     border-radius: 30px;
